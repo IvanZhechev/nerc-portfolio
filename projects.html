@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої проєкти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="site-nav container">
+        <a href="index.html">Головна</a>
+        <a href="projects.html">Проєкти та контакти</a>
+    </nav>
+
+    <main class="container">
+
+        <h1 class="page-title">Мої проєкти</h1>
+
+        <p>Приклади робіт та проєктів, над якими я працював.</p>
+
+        <p>
+            <a href="#gallery">Перейти до галереї</a>
+        </p>
+
+        <h2 class="section-title" id="gallery">
+            Галерея проєктів
+        </h2>
+
+        <div class="gallery-item">
+            <h3>Minecraft</h3>
+            <img class="project-image"
+                 src="images/minecraft.png"
+                 alt="Ігровий проєкт Minecraft"
+                 width="600">
+            <p>Робота над власним ігровим сервером та його функціональністю.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h3>Roblox</h3>
+            <img class="project-image"
+                 src="images/roblox.png"
+                 alt="Ігровий проєкт на платформі Roblox"
+                 width="600">
+            <p>Розробка ігрових механік та створення власного ігрового середовища.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h3>Web Development</h3>
+            <img class="project-image"
+                 src="images/website.png"
+                 alt="Приклад створеного вебсайту"
+                 width="600">
+            <p>Практика веброзробки та створення користувацьких інтерфейсів.</p>
+        </div>
+
+        <h2 class="section-title">Форма звернення</h2>
+
+        <form class="contact-form">
+
+            <div class="form-field">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="topic">Тема звернення:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Оберіть тему</option>
+                    <option value="cooperation">Співпраця</option>
+                    <option value="question">Запитання щодо проєкту</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message"
+                          rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Надіслати</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
